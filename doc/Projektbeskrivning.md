@@ -25,9 +25,6 @@ navigationen tar liten eller ingen plats, medans bilderna tar upp så mycket yta
 Vi har vissa förkunskaper eftersom Gustafs farsa är hobbyfotograf och Mikael är också en hobbyfotograf.  
 Båda föredrar att fotografera djur och natur. Gustaf är intresserad av bilder och redigering.
 
-## *Förändra*
-*Lägg gärna till egna rubriker eller förändra strukturen så att den passar ert projekt.*
-
 ## Tidsplanering
 
 

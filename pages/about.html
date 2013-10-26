@@ -3,12 +3,21 @@
     <head>
     <meta charset="utf-8" />
     <title></title>
-        <link type="text/css" rel="stylesheet" href="../css/style.css" />
         <link type="text/css" rel="stylesheet" href="../css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/print.css" media="print" />
+        
     </head>
     <body>
         <header></header>
-        <nav></nav>
+        <nav>
+            <ul class="nav">
+                <li><a id="blogbutton" href="blog.html">Blogg</a></li>
+                <li><a id="gallerybutton" href="gallery.html">Galleri</a></li>
+                <li><a id="aboutbutton" href="./about.html" class="active">Om mig</a></li>
+                <li><a id="linksbutton" href="links.html">Länkar</a></li>
+            </ul>
+        </nav>
         <main>
         
         <article>
@@ -18,18 +27,37 @@
         Ända sedan jag var liten har jag varit intresserad av djur, natur och friluftsliv vilket ledde till att jag började fotografera just djur och natur. 
         När jag inte jobbar eller är ute och fotografera så är jag med min familj som består av en fru, 12 barn och en bläckfisk som husddjur. </p>
         </article>
-        
-        
-        
-        
+<br>
+        <article>
+            <h2>Min utrustning</h2>
+            <ol>
+                <li>Canon EOS 40d</li>
+                <li>Canon 400mm f5.6L</li>
+                <li>Tamron 90mm f2.8 DI Macro 1:1</li>
+                <li>Sigma EX 10-20mm f4-5.6 HSM</li>
+            </ol>
+<br>
+            <p>Jag har en Canon EOS 40d som har ett par år på nacken. Till den så har jag ett fast teleobjektiv på 400mm
+                som är perfekt för att ta bilder på fåglar och andra djur som är långt bort. Det är ett riktigt skarpt objektiv
+                med snabb auto fokus.
+                Jag har ett 90mm Tamron som jag använder till att ta närbilder med, det är ett bra och ljusstarkt objektiv med bra skärpa.
+                Till landsskapsbilder använder jag ett ultravidvinkelobjektiv på 10-20mm från sigma. 
+                I galleriet finns det bilder tagna med denna utrustningen.
+            </p>
+        </article>
+<br>        
+        <h2>Kontakt</h2>
+    <p>Om du har några frågor angående något eller vill köpa någon bild så kan du fylla i formuläret nedan.</p>    
             <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
     <fieldset>   
     
-    <legend>Kontakt</legend>
+    <legend><h3>Kontakt</h3></legend>
         <label>Typ av ärende</label>
     <br>
         <select name="Typ av ärende">
 	        <option value="Fråga">Fråga</option>
+	        <option value="Köpa bild">Köpa bild</option>
+	        <option value="Feedback">Feedback</option>
 	        <option value="Övrigt">Övrigt</option>
 	    </select>
     <br>
@@ -79,9 +107,11 @@
         <input type="submit" value="Skicka">
         
     </fieldset>
+    
+    
 </form>
         </main>
-        <footer></footer>
+        <footer>© Fotograf AB</footer>
     </body>
     
 </html>

@@ -1,9 +1,215 @@
+/*De olika kolumnerna*/
 body {
-    background-color:#F2EDC8;
+    background-color:#F7FAFA;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
+}
+
+header {
+    background-color:#E3FDED;
+    padding:100px;
+}
+
+main{
+    float:left;
+    width:100%;
+    text-align:center;
+}
+footer {
+    clear:both;
+}
+
+/*Typsnitt och teckenstorlekar*/
+h1 {
+    font-weight: bold;
+    Color: black;
+    font-size: 40px;
+    
+}
+
+h2 {
+    font-weight: bold;
+    Color: black;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: bold;
+    Color: black;
+    font-size: 20px;
+}
+
+h4 {
+    font-weight: bold;
+    Color: black;
+    font-size: 15px;
+}
+
+h5 {
+    font-weight: bold;
+    Color: black;
+    font-size: 10px;
+}
+
+p {
+    Color: black;
+    font-size: 17px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a:after {
+	color: #333;
+	font-size: 18px;
+	position: relative;
+	top:15px;
+}
+
+/* Navigationen */
+.nav {  
+    text-align:center;
+    position:relative;
+    width:100%;
+}
+ 
+.nav li {display:inline;
+}
+
+.nav li a {    
+    margin-top:5px;
+    margin-left:auto;
+    margin-right:auto;
+    display:inline-block;
+    width:50px;
+    text-decoration:none;
+    padding:7px 5px;
+    border-radius:3px;
+    color:#021b2b;
+    background-image:url("pictures/Ice.png");
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    }
+
+
+.nav li a:hover {
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,.7);
+    box-shadow: 0 2px 4px rgba(0,0,0,.7);
+}
+
+.nav li a.active {color:#9a1205;} 
+
+#blogbutton {
+    background-position:0 0;
+    background-repeat:no-repeat;}
+
+#blogbutton:hover {
+    background-position:0 -41px;
+    background-repeat:no-repeat;}
+
+#gallerybutton {
+    background-position:0 -82px;
+    background-repeat:no-repeat;}
+
+#gallerybutton:hover {
+    background-position:0 -123px;
+    background-repeat:no-repeat;}
+
+#aboutbutton {
+    background-position:0 -164px;
+    background-repeat:no-repeat;}
+
+#aboutbutton:hover {
+    background-position:0 -205px;
+    background-repeat:no-repeat;}
+
+#linksbutton {
+    background-position:0 -246px;
+    background-repeat:no-repeat;}
+
+#linksbutton:hover {
+    background-position:0 -287px;
+    background-repeat:no-repeat;}
+
+/* Bilder på galleri*/
+
+.gallerybox {display:block;
+            margin-left:auto;
+            margin-right:auto;
+            position:relative;
+            width:90%;
+            margin-top:5px;
+            }
+            
+/*Länkbilder på länksidan*/
+
+
+.links {
+    display:inline-block;
+    vertical-align:text-top;
+}
+
+.linkpictures a
+{
+    
+    width:230px;
+	background: white;
+	display: block;
+	margin: 10px 10px 30px;
+	padding: 10px 10px 70px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	transition: all .15s linear;
+	z-index:0;
+    position:relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top:30px;
 }
 
 
+.linkpictures a:after {
+	color: #333;
+	font-size: 18px;
+	content: attr(title);
+	position: relative;
+	top:15px;
+}
+
+.linkpictures { 
+	display: block; 
+	width: inherit;
+	
+}
+
+
+.linkpictures a:hover,.linkpictures a:focus{
+    
+	-webkit-transform: rotate(0deg); 
+	-moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+	-webkit-transform: scale(1.2); 
+	-moz-transform: scale(1.2);
+        transform: scale(1.2);
+	z-index:10;
+	-webkit-box-shadow: 0 14px 25px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 14px 25px rgba(0,0,0,.7);
+        box-shadow: 0 14px 25px rgba(0,0,0,.7);
+        outline:none;
+        
+}
 /* Mickes bilder: http://www.flickr.com/photos/97060316@N07/with/9556136708/ */
 
 /* F2EDC8 C3DEC9 ABB8C7 */
 /* D39FDE D4BFB5 */
+/* ACC9F5 CCDCE3 F7FAFA CCE3DC E3FDED */

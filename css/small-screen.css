@@ -28,7 +28,7 @@ form {
     font-family:Arial, sans-serif; 
     color:black; 
     border:solid 1px #ccc; 
-    margin:20px 0 0 0px; 
+    margin:0 0 20px; 
     width:300px;
     -webkit-border-radius: 6px; 
     -moz-border-radius: 6px; 
@@ -63,51 +63,37 @@ form {
 
 /*Typsnitt och teckenstorlekar*/
 h1 {
-    font-family:Verdana;
-    font-weight: 550;
+    font-weight: bold;
     Color: black;
     font-size: 40px;
-    padding-top:10px;
-    padding-bottom:10px;
+    
 }
 
 h2 {
-    font-family:Verdana;
-    font-weight: 600;
+    font-weight: bold;
     Color: black;
     font-size: 28px;
-    padding-top:10px;
-    padding-bottom:10px;
 }
 
 h3 {
-    font-family:Verdana;
-    font-weight: 650;
+    font-weight: bold;
     Color: black;
     font-size: 20px;
-    padding-top:10px;
-    padding-bottom:10px;
 }
 
 h4 {
-    font-family:Verdana;
-    font-weight: 700;
+    font-weight: bold;
     Color: black;
     font-size: 15px;
-    padding-top:10px;
-    padding-bottom:10px;
 }
 
 h5 {
-    font-family:Verdana;
-    font-weight: 750;
+    font-weight: bold;
     Color: black;
     font-size: 10px;
-    text-align:right;
 }
 
 p {
-    font-family:garamond;
     Color: black;
     font-size: 17px;
 }
@@ -161,7 +147,7 @@ nav a:after {
     box-shadow: 0 2px 4px rgba(0,0,0,.7);
 }
 
-.nav li .active {border:solid 1px #3180f7;} 
+.nav li a.active {} 
 
 #blogbutton {
     background-position:0 0;
@@ -197,7 +183,6 @@ nav a:after {
 
 /* Bilder på galleri*/
 
-/* Gammal gallerybox-css
 .gallerybox {display:block;
             margin-left:auto;
             margin-right:auto;
@@ -205,26 +190,11 @@ nav a:after {
             width:90%;
             margin-top:5px;
             }
-*/
             
-.gallerybox {display:inline;
-            margin-left:auto;
-            margin-right:auto;
-            position:relative;
-            max-height:15%;
-            margin-top:5px;
-            }
-            
-#imagebox {
-    display:block;
-    margin:auto;
-    max-height:100%;
-    max-width:100%;
-}
-
 #imagecontainer {
-    height:600px;
+    display:none;
 }
+            
 /*Länkbilder på länksidan*/
 
 
@@ -287,7 +257,6 @@ nav a:after {
         outline:none;
         
 }
-
 /* Bloggsidan */
 .Blogpost{
     background-color:#CCDCE3;
@@ -313,24 +282,25 @@ nav a:after {
     padding-bottom:7px;
 }
 
-.About{
-    margin-top:20px;
-    background-color:#CCE3DC;
-    width:740px;
-    float:left;
-    padding:20px;
-    margin-bottom:20px;
+.About p {
+    margin:10px;
 }
 
-.Contact{
+.About {margin-top:20px;
     background-color:#CCE3DC;
-    margin-left:210px;
-    float:left;
-    width:330px;
 }
+
+.Contact {
+    background-color:#CCE3DC;
+    margin-top:20px;}
+    
+.Contact p {margin:10px;}
+
+.Contact form {margin:10px;}
+
+label {font-size:18px;}
 
 form {width:280px;}
-label {font-size:18px;}
 
 /* Mickes bilder: http://www.flickr.com/photos/97060316@N07/with/9556136708/ */
 

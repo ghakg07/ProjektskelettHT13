@@ -2,11 +2,20 @@
 <html lang="sv">
     <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <title>Fotograf AB - Gallery</title>
         <link type="text/css" rel="stylesheet" href="../css/reset.css" />
-        <link type="text/css" rel="stylesheet" href="../css/style.css" />
+        <link type="text/css" rel="stylesheet" href="../css/style.css" media="only screen and (min-width:481px)" />
+        <link type="text/css" rel="stylesheet" href="../css/small-screen.css" media="screen and (max-width:480px)" />
         <link rel="stylesheet" href="../css/print.css" media="print" />
-        
+        <script type="text/javascript">
+            function ShowImage(img){
+             document.getElementById("imagebox").src = img.src;
+             document.getElementById("imagebox").alt = img.alt;
+             document.getElementById("imageanchor").href = img.src
+             document.getElementById("imageanchor").title = img.title
+            }
+        </script>
     </head>
     <body>
         <header></header>
@@ -19,20 +28,25 @@
             </ul>
         </nav>
         <main>
-            <a href="../pictures/Caput.jpg" title="Caput"><img class="gallerybox" src="../pictures/Caput.jpg" alt="Bild på iskristaller"/></a>
-            <a href="../pictures/Duo.jpg" title="Duo"><img class="gallerybox" src="../pictures/Duo.jpg" alt="Två fåglar står rygg mot rygg och poserar för fotografen"/></a>
-            <a href="../pictures/Eye.jpg" title="Eye beyond"><img class="gallerybox" src="../pictures/Eye.jpg" alt="Något i vattner som ser ut som ett öga"/></a>
-            <a href="../pictures/Facets.jpg" title="Facets"><img class="gallerybox" src="../pictures/Facets.jpg" alt="Närbild på en fluga"/></a>
-            <a href="../pictures/Heron.jpg" title="Heron"><img class="gallerybox" src="../pictures/Heron.jpg" alt="En häger som flyger"/></a>
-            <a href="../pictures/King bore.jpg" title="King Bore"><img class="gallerybox" src="../pictures/King bore.jpg" alt="Landskapsbild på King bore"/></a>
-            <a href="../pictures/Pale Lily.jpg" title="Pale Lily"><img class="gallerybox" src="../pictures/Pale Lily.jpg" alt="En lilja som flyter i vattnet"/></a>
-            <a href="../pictures/Rauks.jpg" title="Byrum's raukar"><img class="gallerybox" src="../pictures/Rauks.jpg" alt="En bild på raukar"/></a>
-            <a href="../pictures/Sanby Borg.jpg" title="Sandby Borg"><img class="gallerybox" src="../pictures/Sanby Borg.jpg" alt="Landskapsbild på Sanby Borg"/></a>
-            <a href="../pictures/Trollskogen.jpg" title="Trollskogen"><img class="gallerybox" src="../pictures/Trollskogen.jpg" alt="Strand i närheten av trollskogen"/></a>
-            <a href="../pictures/Winter.jpg" title="Sandby Öland"><img class="gallerybox" src="../pictures/Winter.jpg" alt="Bild på ett par stenar som ligger på en strand tillsammans med någon växt som sköljts upp"/></a>
-            <a href="../pictures/Wrecks.jpg" title="Wreck of Swiks"><img class="gallerybox" src="../pictures/Wrecks.jpg" alt="Ett skeppsvrak som ligger på en strand"/></a>
-            <a href="../pictures/Ölandsbron VII.jpg" title="Ölandsbron VII"><img class="gallerybox" src="../pictures/Ölandsbron VII.jpg" alt="Ölandsbron sedd underifrån med en dramatisk himmel i bakgrunden"/></a>
-            <a href="../pictures/Ölandsbron.jpg" title="Ölandsbron"><img class="gallerybox" src="../pictures/Ölandsbron.jpg" alt="Snö med stor isklump som sticker upp i förgrunden, ölandsbron kan ses i bakgrunden"/></a>
+            <div id="imagecontainer">
+                <a href="../pictures/Caput.jpg" title="Caput" id="imageanchor">
+                    <img id="imagebox" title="Caput" src="../pictures/Caput.jpg" alt="Bild på iskristaller"/>
+                </a>
+            </div>
+            <img title="Caput" class="gallerybox" src="../pictures/Caput.jpg" alt="Bild på iskristaller" onclick="javascript:ShowImage(this)" />
+            <img title="Duo" class="gallerybox" src="../pictures/Duo.jpg" alt="Två fåglar står rygg mot rygg och poserar för fotografen" onclick="javascript:ShowImage(this)" />
+            <img  title="Eye beyond" class="gallerybox" src="../pictures/Eye.jpg" alt="Något i vattner som ser ut som ett öga" onclick="javascript:ShowImage(this)" />
+            <img  title="Facets" class="gallerybox" src="../pictures/Facets.jpg" alt="Närbild på en fluga" onclick="javascript:ShowImage(this)" />
+            <img  title="Heron" class="gallerybox" src="../pictures/Heron.jpg" alt="En häger som flyger" onclick="javascript:ShowImage(this)" />
+            <img  title="King Bore" class="gallerybox" src="../pictures/King%20bore.jpg" alt="Landskapsbild på King bore" onclick="javascript:ShowImage(this)" />
+            <img  title="Pale Lily" class="gallerybox" src="../pictures/Pale%20Lily.jpg" alt="En lilja som flyter i vattnet" onclick="javascript:ShowImage(this)" />
+            <img  title="Byrum's raukar" class="gallerybox" src="../pictures/Rauks.jpg" alt="En bild på raukar" onclick="javascript:ShowImage(this)" />
+            <img  title="Sandby Borg" class="gallerybox" src="../pictures/Sanby%20Borg.jpg" alt="Landskapsbild på Sanby Borg" onclick="javascript:ShowImage(this)" />
+            <img  title="Trollskogen" class="gallerybox" src="../pictures/Trollskogen.jpg" alt="Strand i närheten av trollskogen" onclick="javascript:ShowImage(this)" />
+            <img  title="Sandby Öland" class="gallerybox" src="../pictures/Winter.jpg" alt="Bild på ett par stenar som ligger på en strand tillsammans med någon växt som sköljts upp" onclick="javascript:ShowImage(this)" />
+            <img  title="Wreck of Swiks" class="gallerybox" src="../pictures/Wrecks.jpg" alt="Ett skeppsvrak som ligger på en strand" onclick="javascript:ShowImage(this)" />
+            <img  title="Ölandsbron VII" class="gallerybox" src="../pictures/Ölandsbron%20VII.jpg" alt="Ölandsbron sedd underifrån med en dramatisk himmel i bakgrunden" onclick="javascript:ShowImage(this)" />
+            <img  title="Ölandsbron" class="gallerybox" src="../pictures/Ölandsbron.jpg" alt="Snö med stor isklump som sticker upp i förgrunden, ölandsbron kan ses i bakgrunden" onclick="javascript:ShowImage(this)" />
         </main>
         <footer></footer>
     </body>

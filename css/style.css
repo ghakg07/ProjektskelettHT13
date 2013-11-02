@@ -161,7 +161,11 @@ nav a:after {
     box-shadow: 0 2px 4px rgba(0,0,0,.7);
 }
 
-.nav li .active {border:solid 1px #3180f7;} 
+ .nav li .active {    
+    -webkit-box-shadow: inset -1px 2px 4px rgba(0, 0, 0, .8);
+    -moz-box-shadow: inset -1px 2px 4px rgba(0,0,0,.8);
+    box-shadow: inset -1px 2px 4px rgba(0,0,0,.8);} 
+/* .nav li .active {border:solid 1px #3180f7;} */
 
 #blogbutton {
     background-position:0 0;
@@ -213,17 +217,21 @@ nav a:after {
             position:relative;
             max-height:15%;
             margin-top:5px;
-            }
+            cursor:pointer;
+            } 
             
+
 #imagebox {
-    display:block;
-    margin:auto;
     max-height:100%;
     max-width:100%;
+    vertical-align:middle;
 }
 
 #imagecontainer {
+    margin-top:5px;
     height:600px;
+    line-height:600px;
+    text-align:center;
 }
 /*Länkbilder på länksidan*/
 
@@ -320,6 +328,10 @@ nav a:after {
     float:left;
     padding:20px;
     margin-bottom:20px;
+    -moz-box-shadow:    inset 0 0 5px rgba(0,0,0,.7);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.7);
+    box-shadow:         inset 0 0 5px rgba(0,0,0,.7);
+
 }
 
 .Contact{
@@ -327,8 +339,12 @@ nav a:after {
     margin-left:210px;
     float:left;
     width:330px;
+    -moz-box-shadow:    inset 0 0 5px rgba(0,0,0,.7);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.7);
+    box-shadow:         inset 0 0 5px rgba(0,0,0,.7);
 }
 
+.Contact p {margin:10px;}
 form {width:280px;}
 label {font-size:18px;}
 

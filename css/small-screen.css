@@ -286,13 +286,21 @@ nav a:after {
     margin:10px;
 }
 
-.About {margin-top:20px;
+.About {
+    margin-top:20px;
     background-color:#CCE3DC;
+    -moz-box-shadow:    inset 0 0 5px rgba(0,0,0,.7);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.7);
+    box-shadow:         inset 0 0 5px rgba(0,0,0,.7);
 }
 
 .Contact {
     background-color:#CCE3DC;
-    margin-top:20px;}
+    margin-top:20px;
+    -moz-box-shadow:    inset 0 0 5px rgba(0,0,0,.7);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.7);
+    box-shadow:         inset 0 0 5px rgba(0,0,0,.7);
+}
     
 .Contact p {margin:10px;}
 

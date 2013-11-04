@@ -2,6 +2,9 @@
 <html lang="sv">
     <head>
     <meta charset="utf-8" />
+    <link rel="icon" 
+      type="image/png" 
+      href="../pictures/logos/Logo.png">
     <meta name="viewport" content="width=device-width">
     <title>Fotograf AB - Blog</title>
         <link type="text/css" rel="stylesheet" href="../css/reset.css" />
@@ -11,57 +14,62 @@
         
     </head>
     <body>
-        <header></header>
-        <nav>
-            <ul class="nav">
-                <li><a id="blogbutton" href="./blog.html" class="active">Blogg</a></li>
-                <li><a id="gallerybutton" href="gallery.html">Galleri</a></li>
-                <li><a id="aboutbutton" href="about.html">Om mig</a></li>
-                <li><a id="linksbutton" href="links.html">Länkar</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h2>Blogg</h2>
-            <article class="Blogpost">
-            <h3>Första blogginlägget</h3>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-            anim id est laborum."</p>
-            <br>
-            <section class="Commentsection"><h3>Kommentarer</h3>
-            <p class="Comment">FIRST!!</p><h5>Av Internet Troll</h5>
-            <p class="Comment">Inte ens jag hade kunnat göra en så bra webbsida, men det beror nog på att tangentbordet går sönder när jag skriver.</p><h5>Av Chuck Norris</h5>
-            
-            
-            </section>
-            </article>
-            
-            <article class="Blogpost">
-            <h3>Andra blogginlägget</h3>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-            anim id est laborum."</p>
-            <br>
-            <section class="Commentsection"><h3>Kommentarer</h3>
-            <p class="Comment">Fyfan så snyg websida.</p><h5>Av Karl XVI Gustaf</h5>
-            <p class="Comment">Me like this!</p><h5>Av Filthy Caveman</h5>
-            
-            
-            </section>
-            </article>
-            
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-        </main>
-        <footer></footer>
+        <div id="wrapper">
+            <a href="../index.html">
+            <header><h1>Fotograf AB</h1></header>
+            </a>
+            <nav>
+                <ul>
+                    <li><a id="blogbutton" href="./blog.html" class="active">Blogg</a></li>
+                    <li><a id="gallerybutton" href="gallery.html">Galleri</a></li>
+                    <li><a id="aboutbutton" href="about.html">Om mig</a></li>
+                    <li><a id="linksbutton" href="links.html">Länkar</a></li>
+                </ul>
+            </nav>
+            <main class="blogmain">
+                
+                <article class="Blogpost">
+                <h3>Första blogginlägget</h3>
+                <img src="../pictures/logos/Bird.jpg" alt="Bild på en fågel" class="Blogpicture">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                anim id est laborum."</p>
+                <br>
+                <section class="Commentsection"><h3>Kommentarer</h3>
+                <p class="Comment">FIRST!!</p><h5>Av Internet Troll</h5>
+                <p class="Comment">Inte ens jag hade kunnat göra en så bra webbsida, men det beror nog på att tangentbordet går sönder när jag skriver.</p><h5>Av Chuck Norris</h5>
+                <p class="MoreComments">Visa fler kommentarer</P>
+                
+                </section>
+                </article>
+                
+                <article class="Blogpost">
+               
+                <h3>Andra blogginlägget</h3>
+                 <img src="../pictures/logos/Leaf.jpg" alt="Bild på ett par löv" class="Blogpicture">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                anim id est laborum."</p>
+                <br>
+                <section class="Commentsection"><h3>Kommentarer</h3>
+                <p class="Comment">Fyfan så snyg websida.</p><h5>Av Karl XVI Gustaf</h5>
+                <p class="Comment">Me like this!</p><h5>Av Filthy Caveman</h5>
+                <p class="MoreComments">Visa fler kommentarer</P>
+                
+                
+                </section>
+                </article>
+                
+                
+            </main>
+            <footer>© Fotograf AB</footer>
+        </div>
     </body>
     
 </html>

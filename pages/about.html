@@ -2,6 +2,9 @@
 <html lang="sv">
     <head>
     <meta charset="utf-8" />
+    <link rel="icon" 
+      type="image/png" 
+      href="../pictures/logos/Logo.png">
     <meta name="viewport" content="width=device-width">
     <title>About - Fotograf AB</title>
         <link type="text/css" rel="stylesheet" href="../css/reset.css" />
@@ -11,111 +14,85 @@
         
     </head>
     <body>
-        <header></header>
-        <nav>
-            <ul class="nav">
-                <li><a id="blogbutton" href="blog.html">Blogg</a></li>
-                <li><a id="gallerybutton" href="gallery.html">Galleri</a></li>
-                <li><a id="aboutbutton" href="./about.html" class="active">Om mig</a></li>
-                <li><a id="linksbutton" href="links.html">Länkar</a></li>
-            </ul>
-        </nav>
-        <main class="About">
-        
-        <article>
-        <h1>Presentation</h1>
-        <p>Hej!
-        Jag har under hela mitt liv jobbat som tvättmaskinsreparatör och blev för ett par år sedan väldigt intresserad av kameror och fotografering. 
-        Ända sedan jag var liten har jag varit intresserad av djur, natur och friluftsliv vilket ledde till att jag började fotografera just djur och natur. 
-        När jag inte jobbar eller är ute och fotografera så är jag med min familj som består av en fru, 12 barn och en bläckfisk som husddjur. </p>
-        </article>
-<br>
-        <article>
-            <h2>Min utrustning</h2>
-            <ol>
-                <li>Canon EOS 40d</li>
-                <li>Canon 400mm f5.6L</li>
-                <li>Tamron 90mm f2.8 DI Macro 1:1</li>
-                <li>Sigma EX 10-20mm f4-5.6 HSM</li>
-            </ol>
-<br>
-            <p>Jag har en Canon EOS 40d som har ett par år på nacken. Till den så har jag ett fast teleobjektiv på 400mm
-                som är perfekt för att ta bilder på fåglar och andra djur som är långt bort. Det är ett riktigt skarpt objektiv
-                med snabb auto fokus.
-                Jag har ett 90mm Tamron som jag använder till att ta närbilder med, det är ett bra och ljusstarkt objektiv med bra skärpa.
-                Till landsskapsbilder använder jag ett ultravidvinkelobjektiv på 10-20mm från sigma. 
-                I galleriet finns det bilder tagna med denna utrustningen.
-            </p>
-        </article>
-        </main>
-<br>
-<main class="Contact">
-        <h2>Kontakt</h2>
-    <p>Om du har några frågor angående något eller vill köpa någon bild så kan du fylla i formuläret nedan.</p>    
-            <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
-    <fieldset>   
+        <div id="wrapper">
+        <a href="../index.html">
+            <header><h1>Fotograf AB</h1></header>
+            </a>
+            <nav>
+                <ul>
+                    <li><a id="blogbutton" href="blog.html">Blogg</a></li>
+                    <li><a id="gallerybutton" href="gallery.html">Galleri</a></li>
+                    <li><a id="aboutbutton" href="./about.html" class="active">Om mig</a></li>
+                    <li><a id="linksbutton" href="links.html">Länkar</a></li>
+                </ul>
+            </nav>
+            <main class="About">
+            <div class="content">
+            <article>
+            <h1>Presentation</h1>
+            <img src="../pictures/logos/Profileimage.jpg" alt="Bild på fotograf" class="Profileimage">
+            <p>
+            Hej!
+            Jag har under hela mitt liv jobbat som tvättmaskinsreparatör och blev för ett par år sedan väldigt intresserad av kameror och fotografering. 
+            Ända sedan jag var liten har jag varit intresserad av djur, natur och friluftsliv vilket ledde till att jag började fotografera just djur och natur. 
+            När jag inte jobbar eller är ute och fotografera så är jag med min familj som består av en fru, 12 barn och en bläckfisk som husddjur. </p>
+            </article>
+            <article>
+                <h2>Min utrustning</h2>
+                    <section class="equipment">
+                    <img src="../pictures/logos/EOS40D.jpg" alt="Produktbild på kamera" class="Aboutimage">
+                    <p>Canon EOS 40d</p>
+                    </section>
+                    <section class="equipment">
+                    <img src="../pictures/logos/EF400mm.jpg" alt="Produktbild på kamera" class="Aboutimagesmall">
+                    <p>Canon 400mm f5.6L</p>
+                    </section>
+                    <section class="equipment">
+                    <img src="../pictures/logos/macro_272e.jpg" alt="Produktbild på kamera" class="Aboutimagesmall">
+                    <p>Tamron 90mm f2.8 DI Macro 1:1</p>    
+                    </section>
     
-    <legend>Kontakt</legend>
-        <label>Typ av ärende</label>
-    <br>
-        <select name="Typ av ärende">
-	        <option value="Fråga">Fråga</option>
-	        <option value="Köpa bild">Köpa bild</option>
-	        <option value="Feedback">Feedback</option>
-	        <option value="Övrigt">Övrigt</option>
-	    </select>
-    <br>
-    <br>        
+                <p>Jag har en Canon EOS 40d som har ett par år på nacken. Till den så har jag ett fast teleobjektiv på 400mm
+                    som är perfekt för att ta bilder på fåglar och andra djur som är långt bort. Det är ett riktigt skarpt objektiv
+                    med snabb auto fokus.
+                    Jag har ett 90mm Tamron som jag använder till att ta närbilder med, det är ett bra och ljusstarkt objektiv med bra skärpa.
+                    Till landsskapsbilder använder jag ett ultravidvinkelobjektiv på 10-20mm från sigma. 
+                    I galleriet finns det bilder tagna med denna utrustningen.
+                </p>
+            </article>
+            </div>
+            <aside class="Contact">
             
-        <label for="Rubrik">Rubrik</label>
-        <br>
-            <input type="text" name="Rubrik" id="Rubrik" />
-    <br>        
-    <br>
-        <label for="meddelande">Meddelande</label>
-        <br>
-            <textarea name="meddelande" id="meddelande" cols=20 rows=5></textarea>
-    <br>
-    <br>
-    
-                <p><em>Dina uppgifter</em></p>
-
-    
-        <label for="Namn">Namn</label>
-            <input type="text" name="Namn" id="Namn" />
-        
-    <br>
-    
-        <label for="E-post">E-post</label>
-            <input type="email" name="E-post" id="E-post" />
-        
-    <br>
-    
-        <label for="Telefon">Telefon</label>
-            <input type="tel" name="Telefon" id="Telefon" />
-            
-    <br>
-    <br>
-    
-                <p><em>Hur vill du bli kontaktad?</em></p>
-    
-    
-        <input type="checkbox" name="Svara via E-post" id="SvaraviaE-post" value="Ja"/>
-            <label for="SvaraviaE-post">E-post</label><br />
-            
-
-            
-        <input type="checkbox" name="Svara via Telefon" id="SvaraviaTelefon" value="Ja"/>
-            <label for="SvaraviaTelefon">Telefon</label><br />
-            
-        <input class="submitbutton" type="submit" value="Skicka">
-        
-    </fieldset>
-    
-    
-</form>
-        </main>
-        <footer>© Fotograf AB</footer>
+                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                    <fieldset>   
+                    
+                    <legend>Kontakt</legend>
+                
+                    
+                        <select name="subject" id="subject">
+                	        <option value="Fråga">Fråga</option>
+                	        <option value="Köpa bild">Köpa bild</option>
+                	        <option value="Feedback">Feedback</option>
+                	        <option value="Övrigt">Övrigt</option>
+                	    </select>
+                    
+                            <input type="text" placeholder="Rubrik" name="Rubrik" id="Rubrik" />
+                         
+                            <textarea placeholder="Meddelande" name="meddelande" id="meddelande" cols=20 rows=5></textarea>
+                    
+                            <input type="text" placeholder="Namn" name="Namn" id="Namn" />
+                    
+                            <input type="email" placeholder="E-post" name="E-post" id="E-post" />
+                    
+                            <input type="tel" placeholder="Telefon" name="Telefon" id="Telefon" />
+                    
+                            <input type="submit" class="submitbutton">
+                    </fieldset>
+                </form>
+            </aside>
+            </main>
+            <footer>© Fotograf AB</footer>
+        </div>
     </body>
     
 </html>

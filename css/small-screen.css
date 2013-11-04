@@ -1,6 +1,11 @@
+@font-face {
+    font-family:'acmesa';
+    src:url('../fonts/acmesa.TTF');
+}
+
 /*De olika kolumnerna*/
 body {
-    background-color:#F7FAFA;
+    background-color:#FFF;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -8,38 +13,31 @@ body {
 }
 
 header {
-    background-color:#E3FDED;
-    padding:100px;
+    height:150px;
+    background-image:url("../pictures/logos/header.jpg");
+    background-position:-300px;
+    overflow:hidden;
+    margin-bottom:5px;
 }
-
+header h1 {
+            Text-align:center;
+            font-family:Verdana;
+            font-weight:500;
+}
 main{
     float:left;
     width:100%;
     text-align:center;
 }
 footer {
+    margin-top:40px;
     clear:both;
+    text-align:center;
 }
 
-form {
-    border:0; 
-    padding:10px; 
-    font-size:1.3em; 
-    font-family:Arial, sans-serif; 
-    color:black; 
-    border:solid 1px #ccc; 
-    margin:0 0 20px; 
-    width:300px;
-    -webkit-border-radius: 6px; 
-    -moz-border-radius: 6px; 
-    border-radius: 6px;
-    -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2); 
-    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); 
-    box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    text-align: center;
+a {
+    text-decoration:none;
 }
-
 .submitbutton {
     background-color: #000000;
     -moz-border-radius: 5px;
@@ -63,68 +61,105 @@ form {
 
 /*Typsnitt och teckenstorlekar*/
 h1 {
-    font-weight: bold;
+    font-family:Verdana;
+    font-weight: 550;
     Color: black;
     font-size: 40px;
-    
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 h2 {
-    font-weight: bold;
+    font-family:Verdana;
+    font-weight: 600;
     Color: black;
     font-size: 28px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 h3 {
-    font-weight: bold;
+    font-family:Verdana;
+    font-weight: 650;
     Color: black;
     font-size: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 h4 {
-    font-weight: bold;
+    font-family:Verdana;
+    font-weight: 700;
     Color: black;
     font-size: 15px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 h5 {
-    font-weight: bold;
+    font-family:Verdana;
+    font-weight: 750;
     Color: black;
     font-size: 10px;
+    text-align:right;
 }
 
 p {
-    Color: black;
+    padding-top:10px;
+    font-family:"Perpetua";
+    Color: #413839;
     font-size: 17px;
+    
 }
 
 legend {
-    Color:black;
-    font-size:20px;
+    font-family:Verdana;
+    font-weight: 600;
+    Color: black;
+    font-size: 28px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
-nav {
+.linkbox {
+    display:block;
+}
+
+.startlinks {
     text-align: center;
+    width:100%;
+    display:inline-block;
 }
 
-nav a:after {
-	color: #333;
-	font-size: 18px;
-	position: relative;
-	top:15px;
+.startlinks a {
+    display:inline-block;
+    max-width:45%;
+    font-family:acmesa;
+    text-decoration:none;
+    }
+    
+.startlinks a:nth-child(2):after {
+    content:"\a";
+    white-space:pre;
+}
+
+.startlinks a img {
+    display:block;
+    max-width:100%;
 }
 
 /* Navigationen */
-.nav {  
+nav ul {  
     text-align:center;
     position:relative;
     width:100%;
+    background-color:#ABB8C7;
 }
  
-.nav li {display:inline;
+nav ul li {display:inline;
 }
 
-.nav li a {    
+nav ul li a {    
     margin-top:5px;
     margin-left:auto;
     margin-right:auto;
@@ -141,13 +176,13 @@ nav a:after {
     }
 
 
-.nav li a:hover {
+nav ul li a:hover {
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .7);
     -moz-box-shadow: 0 2px 4px rgba(0,0,0,.7);
     box-shadow: 0 2px 4px rgba(0,0,0,.7);
 }
 
-.nav li a.active {} 
+nav ul li a.active {} 
 
 #blogbutton {
     background-position:0 0;
@@ -282,8 +317,31 @@ nav a:after {
     padding-bottom:7px;
 }
 
+.MoreComments {
+    text-align:center;
+    
+}
+.Blogpicture {
+    width:100%;
+    
+}
+
+.Aboutimage{
+    width:30%;
+    
+}
+
+.Aboutimagesmall{
+    width:30%;
+    
+}
 .About p {
     margin:10px;
+}
+
+.Profileimage{
+    width:40%;
+    
 }
 
 .About {
@@ -294,21 +352,65 @@ nav a:after {
     box-shadow:         inset 0 0 5px rgba(0,0,0,.7);
 }
 
-.Contact {
-    background-color:#CCE3DC;
-    margin-top:20px;
-    -moz-box-shadow:    inset 0 0 5px rgba(0,0,0,.7);
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.7);
-    box-shadow:         inset 0 0 5px rgba(0,0,0,.7);
+
+/* fomulär */
+form {
+    padding:10px; 
+    font-size:1.3em; 
+    font-family:Verdana; 
+    color:black; 
+     
+    width:90%;
+ 
+    display: inline-block;
+    text-align: center;
 }
-    
+
+.Contact {clear:both;
+    border:solid 1px #ccc;
+    -webkit-border-radius: 6px; 
+    -moz-border-radius: 6px; 
+    border-radius: 6px;
+    -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2); 
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+    background-color:#CCDCE3;
+    width:100%;
+    -webkit-border-radius: 6px; 
+    -moz-border-radius: 6px; 
+    border-radius: 6px;
+}
 .Contact p {margin:10px;}
 
-.Contact form {margin:10px;}
+#subject {
+    box-sizing:content-box;
+    width:82%;
+}
+
+#Rubrik {box-sizing:content-box;
+        width:82%;
+}
+
+#meddelande {box-sizing:content-box;
+        width:82%;
+}
+
+#Namn {box-sizing:content-box;
+        width:82%;
+}
+
+#E-post {box-sizing:content-box;
+        width:82%;
+}
+
+#Telefon{box-sizing:content-box;
+        width:82%;
+}
+
 
 label {font-size:18px;}
 
-form {width:280px;}
+
 
 /* Mickes bilder: http://www.flickr.com/photos/97060316@N07/with/9556136708/ */
 

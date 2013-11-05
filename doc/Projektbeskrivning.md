@@ -3,7 +3,7 @@ Projektmedlemmar:
 [ghakg07](https://github.com/ghakg07), [me222rs](https://github.com/me222rs), [fg222cj](https://github.com/fg222cj)
 
 
-[Exekverbar version av projektet](https://github.com/ghakg07/ProjektskelettHT13)
+[Exekverbar version av projektet](http://ghakg07.github.io/ProjektskelettHT13)
 
 
 ## Beskrivning av projektet

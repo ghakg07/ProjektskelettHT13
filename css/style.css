@@ -1,8 +1,13 @@
 @font-face {
+
     font-family:'acmesa';
     src:url('../fonts/acmesa.TTF');
 }
 
+@font-face {
+    font-family:'skorzhen';
+    src:url('../fonts/acmesa.ttf');
+}
 
 /*De olika kolumnerna*/
 body {
@@ -156,7 +161,7 @@ header {
 
 header h1 { display:block;
             Text-align:center;
-            font-family:Verdana;
+            font-family:skorzhen;
             font-weight:500;
             position:relative;
             left:20px;
